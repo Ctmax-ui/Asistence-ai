@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary: #0e398e;
+  --outgoing-chat-bg: #343541;
+}
+body {
+  background: var(--outgoing-chat-bg);
+}
+
+.typing-container{
+  width: 60%;
+  /* background: #000; */
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1em;
+}
+
+
+.chat-area{
+  width: 89% !important;
+  height: 60px !important;
+  border: 0;
+  outline: none !important;
+  border-radius: 5px 0 0 5px;
+  padding: 5px 5px; 
+}
+
+/* for the chatbox start */
+.chat-container {
+  border: 1px solid #ccc;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 300px; /* Adjust as needed */
+}
+.message {
+  margin-bottom: 10px;
+}
+.user-message {
+  text-align: right;
+  color: blue;
+}
+.bot-message {
+  text-align: left;
+  color: green;
+}
+/* for the chatbox end */
+
+
+.typing-container button{
+  border: 0;
+  width: 10%;
+  transition: all .2s ease;
+  border-radius: 0 5px 5px 0;
+}
+.typing-container button i{
+  font-size: 1.2em;
+}
+.typing-container button:hover{
+  background: var(--primary);
+  color: #fff;
+}
